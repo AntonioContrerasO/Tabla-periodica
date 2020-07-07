@@ -10,6 +10,7 @@ public class Fondo extends JPanel {
 
     public Fondo(String nombre) {
         this.nombre = nombre;
+
     }
 
     @Override

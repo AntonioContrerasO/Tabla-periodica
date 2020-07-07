@@ -116,6 +116,6 @@ public class TablaPeriodica implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        Elementos elementos = new Elementos("Zorra");
+        Elementos elementos = new Elementos("HIDROGENO","H",1);
     }
 }
