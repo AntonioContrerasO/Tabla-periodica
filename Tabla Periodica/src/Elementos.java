@@ -15,7 +15,7 @@ public class Elementos extends JFrame {
     int AtomicNumber;
 
 
-    public Elementos(String titulo,String element,int AtomicNumber) {
+    public Elementos(String titulo,String element,int AtomicNumber,int ele) {
         this.titulo = titulo;
         this.element = element;
         this.AtomicNumber = AtomicNumber;
@@ -28,10 +28,13 @@ public class Elementos extends JFrame {
         Encabezado.setFont(new Font("SansSerif",Font.ITALIC,49));
         Encabezado.setForeground(Color.WHITE);
 
-        Element = new JLabel(element);
-        Element.setBounds(5,70,200,200);
-        Element.setFont(new Font("SansSerif",Font.ROMAN_BASELINE,200));
-        Element.setForeground(Color.WHITE);
+        ImageIcon i = new ImageIcon("src/Imagenes/H"+ele+".png");
+
+
+        Element = new JLabel();
+        Element.setBounds(5,10,200,200);
+        Element.setIcon(new ImageIcon(i.getImage().getScaledInstance(Element.getWidth(),Element.getHeight(), Image.SCALE_SMOOTH)));
+        Element.setBorder(null);
 
         numeroAtomico = new JLabel(String.valueOf(AtomicNumber));
         numeroAtomico.setBounds(5,70,30,20);
@@ -53,10 +56,4 @@ public class Elementos extends JFrame {
         this.repaint();
     }
 
-    @Override
-    public void paint(Graphics g) {
-        super.paint(g);
-        g.setColor(Color.WHITE);
-        g.drawRect(10,100,150,200);
-    }
 }

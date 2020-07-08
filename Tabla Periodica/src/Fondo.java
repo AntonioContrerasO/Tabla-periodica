@@ -7,7 +7,6 @@ public class Fondo extends JPanel {
     private String nombre;
 
 
-
     public Fondo(String nombre) {
         this.nombre = nombre;
 
