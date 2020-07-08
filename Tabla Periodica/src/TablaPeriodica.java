@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -15,9 +16,8 @@ public class TablaPeriodica implements ActionListener {
     JButton[][] metalesYGases;
     JButton[] gasesNobles;
     JButton[] lactanidosYactinidos;
-    int ele = 0;
-    ImageIcon[] imagenes = new ImageIcon[2];
 
+    ImageIcon[] imagenes = new ImageIcon[2];
 
     public TablaPeriodica() {
 
@@ -25,15 +25,12 @@ public class TablaPeriodica implements ActionListener {
         fondo = new Fondo("Fondo");
         fondo.setBounds(0,0,width,heigth);
 
-        for(int x=0;x<imagenes.length;x++)
-        {
-            imagenes[x] = new ImageIcon("src/Imagenes/H"+ele+".png");
-            ele++;
-        }
-
+        imagenes[0] = new ImageIcon("src/Imagenes/H0.png");
+        imagenes[1] = new ImageIcon("src/Imagenes/H1.png");
 
         //Botones
         metalesAlcalinos = new JButton[7];
+
         int y = 0;
         int x =0;
         int prueba=0;
@@ -45,13 +42,12 @@ public class TablaPeriodica implements ActionListener {
             y+=68;
             prueba++;
         }
-/*        metalesAlcalinos[0].setIcon(new ImageIcon(imagenes[0].getImage().getScaledInstance(metalesAlcalinos[0].getWidth(),metalesAlcalinos[0].getHeight(), Image.SCALE_SMOOTH)));
+        metalesAlcalinos[0].setIcon(new ImageIcon(imagenes[0].getImage().getScaledInstance(metalesAlcalinos[0].getWidth(),metalesAlcalinos[0].getHeight(), Image.SCALE_SMOOTH)));
         metalesAlcalinos[0].setContentAreaFilled(false);
         metalesAlcalinos[0].setBorder(null);
-        metalesAlcalinos[1].setIcon(new ImageIcon(imagenes[1].getImage().getScaledInstance(metalesAlcalinos[1].getWidth(),metalesAlcalinos[1].getHeight(), Image.SCALE_SMOOTH)));
+        metalesAlcalinos[1].setIcon(new ImageIcon(imagenes[1].getImage().getScaledInstance(metalesAlcalinos[1].getWidth(),metalesAlcalinos[0].getHeight(), Image.SCALE_SMOOTH)));
         metalesAlcalinos[1].setContentAreaFilled(false);
-        metalesAlcalinos[1].setBorder(null);*/
-
+        metalesAlcalinos[1].setBorder(null);
         y = 0;
         metalesAlcalinoterreos = new JButton[6];
         for (int indie=0;indie<metalesAlcalinoterreos.length;indie++)
@@ -137,7 +133,10 @@ public class TablaPeriodica implements ActionListener {
     }
 
     @Override
-    public void actionPerformed(ActionEvent e) {
-        Elementos elementos = new Elementos("HIDROGENO","H",1,0);
+    public void actionPerformed(ActionEvent e) 
+    {
+        Elementos elemento = new Elementos("HIDROGENO","H",1, 0);
+        
     }
+    
 }

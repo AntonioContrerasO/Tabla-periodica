@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
 
 public class Elementos extends JFrame {
 
@@ -8,12 +9,12 @@ public class Elementos extends JFrame {
     private int height = 500;
     JLabel Encabezado;
     JLabel Element;
-    JLabel numeroAtomico;
+    JTextArea texto1;
     String titulo;
     String element;
     Fondo fondo;
     int AtomicNumber;
-
+    ArrayList<String> contenido;
 
     public Elementos(String titulo,String element,int AtomicNumber,int ele) {
         this.titulo = titulo;
@@ -24,27 +25,38 @@ public class Elementos extends JFrame {
         fondo.setBounds(0,0,width,height);
 
         Encabezado = new JLabel(titulo);
-        Encabezado.setBounds(100,0,400,50);
-        Encabezado.setFont(new Font("SansSerif",Font.ITALIC,49));
-        Encabezado.setForeground(Color.WHITE);
+        Encabezado.setBounds(240,20,300,35);
+        Encabezado.setFont(new Font("SansSerif",Font.ITALIC,35));
+        Encabezado.setForeground(Color.BLACK);
 
         ImageIcon i = new ImageIcon("src/Imagenes/H"+ele+".png");
-
 
         Element = new JLabel();
         Element.setBounds(5,10,200,200);
         Element.setIcon(new ImageIcon(i.getImage().getScaledInstance(Element.getWidth(),Element.getHeight(), Image.SCALE_SMOOTH)));
         Element.setBorder(null);
+        
+       texto1 = new JTextArea();
+       texto1.setBounds(240,70,200,300);
+       texto1.setFont(new Font("SansSerif",Font.ITALIC,15));
+        texto1.setForeground(Color.BLACK);
 
-        numeroAtomico = new JLabel(String.valueOf(AtomicNumber));
-        numeroAtomico.setBounds(5,70,30,20);
-        numeroAtomico.setFont(new Font("SansSerif",Font.ROMAN_BASELINE,20));
-        numeroAtomico.setForeground(Color.WHITE);
+        String cadena = "";
+        contenido = Archivo.leerTodo("H.txt");
+        for (String s : contenido) {
+
+            cadena = cadena+s+"\n";
+            texto1.setText(cadena);
+
+        }
+
+
+
 
 
         this.add(Element);
         this.add(Encabezado);
-        this.add(numeroAtomico);
+       this.add(texto1);
 
         this.add(fondo);
         this.setLayout(null);
