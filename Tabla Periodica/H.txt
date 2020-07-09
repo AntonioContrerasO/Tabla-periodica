@@ -1,3 +1,0 @@
-Numero atomico: 1
-Masa atomica: 1.0098
-

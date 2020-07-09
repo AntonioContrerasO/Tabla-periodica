@@ -18,24 +18,23 @@ public class JuegoTabla extends JFrame implements ActionListener {
     public JuegoTabla() {
 
         texto = new JLabel("");
-        texto.setBounds(150,HEIGHT/2,400,50);
+        texto.setBounds(150,150,400,50);
         texto.setFont(new Font("SansSerif",Font.ITALIC,49));
         texto.setForeground(Color.BLACK);
-
 
 
         int x = 0;
         int y = 0;
         for (int i=0;i<botones.length;i++)
         {
-            botones[i] = new JButton(String.valueOf(i));
-            botones[i].setBounds((WIDTH/4)+x,300+y,100,30);
+            botones[i] = new JButton();
+            botones[i].setBounds((WIDTH/6)+x,300+y,200,200);
             this.add(botones[i]);
             botones[i].addActionListener(this);
-            x+=100;
+            x+=200;
             if (i==1)
             {
-                y+=30;
+                y+=200;
                 x=0;
             }
         }
@@ -105,12 +104,19 @@ public class JuegoTabla extends JFrame implements ActionListener {
     {
         Random random = new Random();
         int[] a = new int[4];
-        for (int x = 0;x<a.length;x++ ){
-           a[x] = random.nextInt(119);
+        for (int x = 0;x<a.length;x++){
+           a[x] = random.nextInt(117);
            if (a[0]==a[1]||a[0]==a[2]||a[0]==a[3]||a[1]==a[2]||a[1]==a[3]||a[2]==a[3]);
             {
-                a[x] = random.nextInt(118);
-                System.out.println(a[x]);
+                a[x] = random.nextInt(117);
+            }
+            if (a[x]==56)
+            {
+                a[x] = random.nextInt(117);
+            }
+            if (a[x]==88)
+            {
+                a[x] = random.nextInt(117);
             }
         }
         int[] arrayCorrecto = correctoS(a);
@@ -118,12 +124,17 @@ public class JuegoTabla extends JFrame implements ActionListener {
         correcto[1] = arrayCorrecto[1];
         correcto[2] = arrayCorrecto[2];
         correcto[3] = arrayCorrecto[3];
-        botones[0].setText(elementos[a[0]].getElemento());
-        botones[1].setText(elementos[a[1]].getElemento());
-        botones[2].setText(elementos[a[2]].getElemento());
-        botones[3].setText(elementos[a[3]].getElemento());
 
-        texto.setText(elementos[textoLabel].getNombre());
+        ImageIcon[] imageIcons = new ImageIcon[4];
+        for (int i = 0;i<imageIcons.length;i++ )
+        {
+            imageIcons[i] = new ImageIcon("src/Imagenes/Atos/"+(a[i]+1)+".png");
+        }
+        botones[0].setIcon(new ImageIcon(imageIcons[0].getImage().getScaledInstance(botones[0].getWidth(),botones[0].getHeight(), Image.SCALE_SMOOTH)));
+        botones[1].setIcon(new ImageIcon(imageIcons[1].getImage().getScaledInstance(botones[1].getWidth(),botones[1].getHeight(), Image.SCALE_SMOOTH)));
+        botones[2].setIcon(new ImageIcon(imageIcons[2].getImage().getScaledInstance(botones[2].getWidth(),botones[2].getHeight(), Image.SCALE_SMOOTH)));
+        botones[3].setIcon(new ImageIcon(imageIcons[3].getImage().getScaledInstance(botones[3].getWidth(),botones[3].getHeight(), Image.SCALE_SMOOTH)));
+        revalidate();
     }
     public int[] correctoS(int[] numRandom)
     {
@@ -131,25 +142,28 @@ public class JuegoTabla extends JFrame implements ActionListener {
         int chequeo = random.nextInt(4)+1;
         if (chequeo==1)
         {
-            textoLabel = numRandom[0];
+            texto.setText(elementos[numRandom[0]].getNombre());
             return new int[]{1, 0, 0, 0};
         }
         if (chequeo==2)
         {
-            textoLabel = numRandom[1];
+            texto.setText(elementos[numRandom[1]].getNombre());
             return new int[]{0, 1, 0, 0};
         }
         if (chequeo==3)
         {
-            textoLabel = numRandom[2];
+            texto.setText(elementos[numRandom[2]].getNombre());
             return new int[]{0, 0, 1, 0};
         }
-        textoLabel = numRandom[3];
+        texto.setText(elementos[numRandom[3]].getNombre());
         return new int[]{0, 0, 0, 1};
     }
     ElementosDatos[] elementos = new ElementosDatos[118];
-    public void elements()
-    {
+    public void elements() {
+
+
+
+
         elementos[0] = new ElementosDatos("H"  , "1"  , "HIDRÓGENO");
         elementos[1] = new ElementosDatos("He" , "2"  , "HELIO");
         elementos[2] = new ElementosDatos("Li" , "3"  , "LITIO");

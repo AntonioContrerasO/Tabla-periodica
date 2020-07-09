@@ -11,15 +11,12 @@ public class Elementos extends JFrame {
     JLabel Element;
     JTextArea texto1;
     String titulo;
-    String element;
     Fondo fondo;
-    int AtomicNumber;
     ArrayList<String> contenido;
+    ImageIcon imageIcon;
 
-    public Elementos(String titulo,String element,int AtomicNumber,int ele) {
+    public Elementos(String titulo,ImageIcon imageIcon) {
         this.titulo = titulo;
-        this.element = element;
-        this.AtomicNumber = AtomicNumber;
 
         fondo = new Fondo("FondoGases");
         fondo.setBounds(0,0,width,height);
@@ -29,11 +26,9 @@ public class Elementos extends JFrame {
         Encabezado.setFont(new Font("SansSerif",Font.ITALIC,35));
         Encabezado.setForeground(Color.BLACK);
 
-        ImageIcon i = new ImageIcon("src/Imagenes/H"+ele+".png");
-
         Element = new JLabel();
         Element.setBounds(5,10,200,200);
-        Element.setIcon(new ImageIcon(i.getImage().getScaledInstance(Element.getWidth(),Element.getHeight(), Image.SCALE_SMOOTH)));
+        Element.setIcon(new ImageIcon(imageIcon.getImage().getScaledInstance(Element.getWidth(),Element.getHeight(), Image.SCALE_SMOOTH)));
         Element.setBorder(null);
         
        texto1 = new JTextArea();
@@ -49,11 +44,6 @@ public class Elementos extends JFrame {
             texto1.setText(cadena);
 
         }
-
-
-
-
-
         this.add(Element);
         this.add(Encabezado);
        this.add(texto1);
