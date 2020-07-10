@@ -22,17 +22,18 @@ public class TablaPeriodica implements ActionListener {
     JButton[][] metalesYGases;
     JButton[] gasesNobles;
     JButton[] lactanidosYactinidos;
+    
 
     ImageIcon[] imagenes = new ImageIcon[120];
     ImageIcon extra = new ImageIcon("src/Imagenes/E.png");
-
-    Elementos[] elementos = new Elementos[120];
+    Elementos[] elementos = new Elementos[118];
 
     public TablaPeriodica() {
 
         panel = new JFrame("Tabla Periodica");
         fondo = new Fondo("Fondo");
         fondo.setBounds(0,0,width,heigth);
+
 
 
         tiposElementos = new JLabel();
@@ -167,45 +168,168 @@ public class TablaPeriodica implements ActionListener {
     {
        if (e.getSource() == metalesAlcalinos[0])
        {
-           elementos[0] = new Elementos("Hidrogeno",imagenes[0]);
+           elementos[0] = new Elementos("Hidrogeno",imagenes[0],"1.-H");
        }
         if (e.getSource() == metalesAlcalinos[1])
         {
-            elementos[1] = new Elementos("Litio",imagenes[1]);
+            elementos[1] = new Elementos("Litio",imagenes[1],"3.-Li");
         }
         if (e.getSource() == metalesAlcalinos[2])
         {
-            elementos[2] = new Elementos("Sodio",imagenes[2]);
+            elementos[2] = new Elementos("Sodio",imagenes[2],"11.-Na");
         }
         if (e.getSource() == metalesAlcalinos[3])
         {
-            elementos[3] = new Elementos("Potasio",imagenes[3]);
+            elementos[3] = new Elementos("Potasio",imagenes[3],"K");
         }
         if (e.getSource() == metalesAlcalinos[4])
         {
-            elementos[4] = new Elementos("Rubidio",imagenes[4]);
+            elementos[4] = new Elementos("Rubidio",imagenes[4],"Rb");
         }
         if (e.getSource() == metalesAlcalinos[5])
         {
-            elementos[5] = new Elementos("Cesio",imagenes[5]);
+            elementos[5] = new Elementos("Cesio",imagenes[5],"Cs");
         }
         if (e.getSource() == metalesAlcalinos[6])
         {
-            elementos[6] = new Elementos("Francio",imagenes[6]);
+            elementos[6] = new Elementos("Francio",imagenes[6],"Fr");
         }
         if (e.getSource() == metalesAlcalinoterreos[0])
         {
-            elementos[7] = new Elementos("Be",imagenes[7]);
+            elementos[7] = new Elementos("Berilio",imagenes[7],"Be");
         }
         if (e.getSource() == metalesAlcalinoterreos[1])
         {
-            elementos[8] = new Elementos("Francio",imagenes[8]);
+            elementos[8] = new Elementos("magnesio",imagenes[8],"Mg");
         }
+         if (e.getSource() == metalesAlcalinoterreos[2])
+        {
+            elementos[9] = new Elementos("calcio",imagenes[9],"Ca");
+        }
+         if (e.getSource() == metalesAlcalinoterreos[3])
+        {
+            elementos[10] = new Elementos("estroncio",imagenes[10],"Sr");
+        }
+         if (e.getSource() == metalesAlcalinoterreos[4])
+        {
+            elementos[11] = new Elementos("Bario",imagenes[11],"Ba");
+        }
+         if (e.getSource() == metalesAlcalinoterreos[5])
+        {
+            elementos[12] = new Elementos("Radio",imagenes[12],"Ra");
+        }                               //10 4
+        if(e.getSource()== metalesPesados[0][0])
+        {
+            elementos[13] = new Elementos("Escandio",imagenes[13],"Sc");
+        }
+        if(e.getSource()== metalesPesados[0][1])
+        {
+            elementos[14] = new Elementos("Itrio",imagenes[14],"Y");
+        }
+        if(e.getSource()== metalesPesados[0][2])
+        {
+            elementos[15] = new Elementos("Lantano",imagenes[15],"La");
+        }
+        if(e.getSource()== metalesPesados[0][3])
+        {
+            elementos[16] = new Elementos("Actinio",imagenes[16],"Ac");
+        }
+        if(e.getSource()== metalesPesados[1][0])
+        {
+            elementos[17] = new Elementos("Titanio",imagenes[17],"Ti");
+        }
+        if(e.getSource()== metalesPesados[1][1])
+        {
+            elementos[18] = new Elementos("Circonio",imagenes[18],"Zr");
+        }
+        if(e.getSource()== metalesPesados[1][2])
+        {
+            elementos[19] = new Elementos("Hafnio",imagenes[19],"Hf");
+        }
+        if(e.getSource()== metalesPesados[1][3])
+        {
+            elementos[20] = new Elementos("Rutherfordio",imagenes[20],"Rf");
+        }
+         if(e.getSource()== metalesPesados[2][0])
+        {
+            elementos[21] = new Elementos("Vanadio",imagenes[21],"V");
+        }
+         if(e.getSource()== metalesPesados[2][1])
+        {
+            elementos[22] = new Elementos("Niobio",imagenes[22],"Nb");
+        }
+        if(e.getSource()== metalesPesados[2][2])
+        {
+            elementos[23] = new Elementos("Tantalo",imagenes[23],"Ta");
+        }
+        if(e.getSource()== metalesPesados[2][3])
+        {
+            elementos[24] = new Elementos("Dubnio",imagenes[24],"Db");
+        }
+        if(e.getSource()== metalesPesados[3][0])
+        {
+            elementos[25] = new Elementos("Cromo",imagenes[25],"Cr");
+        }
+        if(e.getSource()== metalesPesados[3][1])
+        {
+            elementos[26] = new Elementos("Molibdeno",imagenes[26],"Mo");
+        }
+        if(e.getSource()== metalesPesados[3][2])
+        {
+            elementos[27] = new Elementos("Wolframio",imagenes[27],"W");
+        }
+        if(e.getSource()== metalesPesados[3][3])
+        {
+            elementos[28] = new Elementos("Seaborgio",imagenes[28],"Sg");
+        }
+        if(e.getSource()== metalesPesados[4][0])
+        {
+            elementos[29] = new Elementos("Manganeso",imagenes[29],"Mn");
+        }
+        if(e.getSource()== metalesPesados[4][1])
+        {
+            elementos[30] = new Elementos("Tecnecio",imagenes[30],"Tc");
+        }
+        if(e.getSource()== metalesPesados[4][2])
+        {
+            elementos[31] = new Elementos("Renio",imagenes[31],"Re");
+        }
+        if(e.getSource()== metalesPesados[4][3])
+        {
+            elementos[32] = new Elementos("Bohrio",imagenes[32],"Bh");
+        }
+        if(e.getSource()== metalesPesados[5][0])
+        {
+            elementos[33] = new Elementos("Hierro",imagenes[33],"Fe");
+        }
+         if(e.getSource()== metalesPesados[5][0])
+        {
+            elementos[33] = new Elementos("Hierro",imagenes[33],"");
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
     
 }
 //Alcalinos 7
 //Alcalinoterreos 6
-//metales Pesados 40
+//metales Pesados 40[][]
 //metales Y Gases 30
 //

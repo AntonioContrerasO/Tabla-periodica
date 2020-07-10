@@ -13,40 +13,40 @@ public class Elementos extends JFrame {
     String titulo;
     Fondo fondo;
     ArrayList<String> contenido;
-    ImageIcon imageIcon;
 
-    public Elementos(String titulo,ImageIcon imageIcon) {
+    public Elementos(String titulo,ImageIcon imageIcon,String string) {
         this.titulo = titulo;
 
         fondo = new Fondo("FondoGases");
         fondo.setBounds(0,0,width,height);
 
-        Encabezado = new JLabel(titulo);
-        Encabezado.setBounds(240,20,300,35);
-        Encabezado.setFont(new Font("SansSerif",Font.ITALIC,35));
-        Encabezado.setForeground(Color.BLACK);
+    Encabezado = new JLabel(titulo);
+    Encabezado.setBounds(240, 20, 300, 40);
+    Encabezado.setFont(new Font("SansSerif", Font.ITALIC, 35));
+    Encabezado.setForeground(Color.BLACK);
 
-        Element = new JLabel();
-        Element.setBounds(5,10,200,200);
-        Element.setIcon(new ImageIcon(imageIcon.getImage().getScaledInstance(Element.getWidth(),Element.getHeight(), Image.SCALE_SMOOTH)));
-        Element.setBorder(null);
-        
-       texto1 = new JTextArea();
-       texto1.setBounds(240,70,200,300);
-       texto1.setFont(new Font("SansSerif",Font.ITALIC,15));
-        texto1.setForeground(Color.BLACK);
+    Element = new JLabel();
+    Element.setBounds(5, 10, 200, 200);
+    Element.setIcon(new ImageIcon(imageIcon.getImage().getScaledInstance(Element.getWidth(), Element.getHeight(), Image.SCALE_SMOOTH)));
+    Element.setBorder(null);
 
-        String cadena = "";
-        contenido = Archivo.leerTodo("H.txt");
-        for (String s : contenido) {
+    texto1 = new JTextArea();
+    texto1.setBounds(40, 250, 400, 170);
+    texto1.setFont(new Font("SansSerif", Font.ITALIC, 15));
+    texto1.setOpaque(false);
+    texto1.setEditable(false);
+    
 
-            cadena = cadena+s+"\n";
-            texto1.setText(cadena);
+    String cadena = "";
+    contenido = Archivo.leerTodo("src/Elementos/" + string + ".txt");
+    for (String s : contenido) {
 
-        }
-        this.add(Element);
-        this.add(Encabezado);
-       this.add(texto1);
+        cadena = cadena + s + "\n";
+    }
+    texto1.append(cadena);
+    this.add(Element);
+    this.add(Encabezado);
+    this.add(texto1);
 
         this.add(fondo);
         this.setLayout(null);
@@ -54,6 +54,7 @@ public class Elementos extends JFrame {
         this.setSize(width,height);
         this.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         this.setLocationRelativeTo(null);
+        this.setResizable(false);
         this.setVisible(true);
         this.repaint();
     }

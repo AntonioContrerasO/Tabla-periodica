@@ -21,17 +21,129 @@
   <component name="ChangeListManager">
     <list default="true" id="f0bfd9b7-fa24-4339-971b-c11661c48fb2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/H.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/1.-H.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/10.-Ne.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/100.-Fm.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/101.-Md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/102.-No.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/103.-Lr.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/104.-Rf.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/105.-Db.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/106.-Sg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/107.-Bh.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/108.-Hs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/109.-Mt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/11.-Na.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/110.-Ds.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/111.-Rg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/112.-Cn.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/113.-Nh.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/114.-Fl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/115.-Mc.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/116.-Lv.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/117.-Ts.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/118.-Og.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/12.-Mg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/13.-Al.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/14.-Si.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/15.-P.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/16.-S.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/17.-Cl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/18.-Ar.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/19.-K.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/2.-He.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/20.-Ca.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/21.-Sc.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/22.-Ti.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/23.-V.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/24.-Cr.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/25.-Mn.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/26.-Fe.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/27.-Co.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/28.-Ni.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/29.-Cu.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/3.-Li.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/30.-Zn.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/31.-Ga.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/32.-Ge.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/33.-As.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/34.-Se.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/35.-Br.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/36.-Kr.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/37.-Rb.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/38.-Sr.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/39.-Y.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/4.-Be.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/40.-Zr.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/41.-Nb.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/42.-Mo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/43.-Tc.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/44.-Ru.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/45.-Rh.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/46.-Pd.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/47.-Ag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/48.-Cd.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/49.-In.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/5.-B.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/50.-Sn.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/51.-Sb.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/52.-Te.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/53.-I.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/54.-Xe.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/55.-Cs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/56.-Ba.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/57.-La.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/58.-Ce.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/59.-Pr.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/6.-C.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/60.-Nd.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/61.-Pm.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/62.-Sm.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/63.-Eu.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/64.-Gd.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/65.-Tb.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/66.-Dy.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/67.-Ho.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/68.-Er.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/69.-Tm.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/7.-N.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/70.-Yb.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/71.-Lu.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/72.-Hf.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/73.-Ta.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/74.-W.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/75.-Re.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/76.-Os.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/77.-Ir.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/78.-Pt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/79.-Au.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/8.-O.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/80.-Hg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/81.-Tl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/82.-Pb.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/83.-Bi.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/84.-Po.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/85.-At.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/86.-Rn.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/87.-Fr.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/88.-Ra.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/89.-Ac.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/9.-F.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/90.-Th.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/91.-Pa.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/92.-U.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/93.-Np.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/94.-Pu.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/95.-Am.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/96.-Cm.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/97.-Bk.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/98.-Cf.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementos/99.-Es.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tabla Periodica/Elementos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tabla Periodica/Elementos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tabla Periodica/Imagenes/Fondo.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tabla Periodica/Imagenes/Fondo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tabla Periodica/Imagenes/H0.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tabla Periodica/Imagenes/H0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tabla Periodica/Imagenes/H1.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tabla Periodica/Imagenes/H1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tabla Periodica/JuegoTabla.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tabla Periodica/JuegoTabla.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tabla Periodica/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tabla Periodica/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tabla Periodica/TablaPeriodica.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tabla Periodica/TablaPeriodica.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Elementos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Elementos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Imagenes/Fondo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Imagenes/Fondo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Imagenes/H0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Imagenes/H0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Imagenes/H1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Imagenes/H1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JuegoTabla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JuegoTabla.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TablaPeriodica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TablaPeriodica.java" afterDir="false" />
@@ -125,45 +237,45 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="551" y="303" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1594178081143" />
-    <state width="1493" height="201" key="GridCell.Tab.0.bottom" timestamp="1594284835114">
+    <state width="1493" height="201" key="GridCell.Tab.0.bottom" timestamp="1594348250014">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="201" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594284835114" />
-    <state width="1493" height="201" key="GridCell.Tab.0.center" timestamp="1594284835114">
+    <state width="1493" height="201" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594348250014" />
+    <state width="1493" height="201" key="GridCell.Tab.0.center" timestamp="1594348250014">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="201" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594284835114" />
-    <state width="1493" height="201" key="GridCell.Tab.0.left" timestamp="1594284835114">
+    <state width="1493" height="201" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594348250014" />
+    <state width="1493" height="201" key="GridCell.Tab.0.left" timestamp="1594348250014">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="201" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594284835114" />
-    <state width="1493" height="201" key="GridCell.Tab.0.right" timestamp="1594284835114">
+    <state width="1493" height="201" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594348250014" />
+    <state width="1493" height="201" key="GridCell.Tab.0.right" timestamp="1594348250014">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="201" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594284835114" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1594276129338">
+    <state width="1493" height="201" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594348250014" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1594342451887">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594276129338" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1594276129338">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594342451887" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1594342451887">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1594276129338" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1594276129338">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1594342451887" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1594342451887">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1594276129338" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1594276129338">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1594342451887" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1594342451887">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1594276129338" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1594342451887" />
     <state x="209" y="33" key="new project wizard" timestamp="1594162309616">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="209" y="33" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1594162309616" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1594067681398">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1594329775600">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1594067681398" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1594329775600" />
   </component>
 </project>

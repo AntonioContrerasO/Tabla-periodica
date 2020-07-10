@@ -13,39 +13,97 @@ public class JuegoTabla extends JFrame implements ActionListener {
     int[] correcto = new int[4];
     private JLabel texto;
     private int textoLabel;
+    private JLabel principal;
+    Fondo fondo;
 
+    JButton play;
+    JButton salir;
+    JLabel puntuacion;
+    int contador = 0;
 
     public JuegoTabla() {
 
-        texto = new JLabel("");
-        texto.setBounds(150,150,400,50);
-        texto.setFont(new Font("SansSerif",Font.ITALIC,49));
-        texto.setForeground(Color.BLACK);
+        fondo = new Fondo("roto");
+        fondo.setBounds(0,0,WIDTH,HEIGHT);
 
+        ImageIcon playImage = new ImageIcon("src/Imagenes/play.png");
+
+        play = new MiBoton();
+        play.setBounds(250,400,100,100);
+        play.setVisible(true);
+        play.setIcon(new ImageIcon(playImage.getImage().getScaledInstance(play.getWidth(),play.getHeight(), Image.SCALE_SMOOTH)));
+        play.setBorder(null);
+        play.setContentAreaFilled(false);
+        play.addActionListener(this);
+        this.add(play);
+
+        ImageIcon exitImage = new ImageIcon("src/Imagenes/salir.png");
+
+        salir = new MiBoton();
+        salir.setBounds(0,0,50,50);
+        salir.setVisible(true);
+        salir.setIcon(new ImageIcon(exitImage.getImage().getScaledInstance(salir.getWidth(),salir.getHeight(), Image.SCALE_SMOOTH)));
+        salir.setBorder(null);
+        salir.setVisible(false);
+        salir.setContentAreaFilled(false);
+        salir.addActionListener(this);
+        this.add(salir);
+
+        principal = new JLabel("Quiz Tabla Periodica");
+        principal.setBounds(15,310,560,60);
+        principal.setFont(new Font("SansSerif",Font.ITALIC,60));
+        principal.setForeground(Color.WHITE);
+        principal.setBackground(Color.decode("0Xfec0b1")); //123A34 dfcb5a fec0b1 969d8d
+        principal.setOpaque(true);
+        this.add(principal);
+
+        texto = new JLabel("");
+        texto.setBounds(100,150,400,50);
+        texto.setVisible(false);
+        texto.setFont(new Font("SansSerif",Font.ITALIC,49));
+        texto.setForeground(Color.WHITE);
+        texto.setBackground(Color.decode("0Xfec0b1"));
+        texto.setOpaque(true);
+        texto.setHorizontalAlignment(SwingConstants.CENTER);
+        texto.setVerticalAlignment(SwingConstants.CENTER);
+
+        puntuacion = new JLabel(String.valueOf(contador));
+        puntuacion.setBounds(240,20,100,100);
+        puntuacion.setVisible(false);
+        puntuacion.setFont(new Font("SansSerif",Font.ITALIC,50));
+        puntuacion.setForeground(Color.WHITE);
+        puntuacion.setBackground(Color.decode("0Xfec0b1"));
+        puntuacion.setOpaque(true);
+        puntuacion.setHorizontalAlignment(SwingConstants.CENTER);
+        puntuacion.setVerticalAlignment(SwingConstants.CENTER);
+        this.add(puntuacion);
 
         int x = 0;
         int y = 0;
         for (int i=0;i<botones.length;i++)
         {
-            botones[i] = new JButton();
-            botones[i].setBounds((WIDTH/6)+x,300+y,200,200);
+            botones[i] = new MiBoton();
+            botones[i].setBounds((WIDTH/6)+x-15,300+y,200,200);
             this.add(botones[i]);
+            botones[i].setVisible(false);
+            botones[i].setBorder(null);
+            botones[i].setContentAreaFilled(false);
             botones[i].addActionListener(this);
-            x+=200;
+            x+=220;
             if (i==1)
             {
-                y+=200;
+                y+=220;
                 x=0;
             }
         }
-        elements();
-        elementsRandom();
         System.out.println(Arrays.toString(correcto));
 
         this.add(texto);
+       this.add(fondo);
         this.setSize(WIDTH,HEIGHT);
         this.setTitle("QUIZ");
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        this.setLocationRelativeTo(null);
         this.setLayout(null);
         this.setResizable(false);
         this.setVisible(true);
@@ -53,6 +111,19 @@ public class JuegoTabla extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == play)
+        {
+            play.setVisible(false);
+            principal.setVisible(false);
+            salir.setVisible(true);
+            puntuacion.setVisible(true);
+            elements();
+            elementsRandom();
+            for (JButton boton : botones) {
+                boton.setVisible(true);
+            }
+            texto.setVisible(true);
+        }
         if (e.getSource() == botones[0])
         {
             if (correcto[0]==0)
@@ -61,6 +132,7 @@ public class JuegoTabla extends JFrame implements ActionListener {
             }
             if (correcto[0]==1)
             {
+                contador++;
                 elementsRandom();
             }
         }
@@ -72,6 +144,7 @@ public class JuegoTabla extends JFrame implements ActionListener {
             }
             if (correcto[1]==1)
             {
+                contador++;
                 elementsRandom();
             }
         }
@@ -83,6 +156,7 @@ public class JuegoTabla extends JFrame implements ActionListener {
             }
             if (correcto[2]==1)
             {
+                contador++;
                 elementsRandom();
             }
         }
@@ -94,19 +168,33 @@ public class JuegoTabla extends JFrame implements ActionListener {
             }
             if (correcto[3]==1)
             {
+                contador++;
                 elementsRandom();
             }
+        }
+        if (e.getSource()==salir)
+        {
+            for (JButton boton : botones) {
+                boton.setVisible(false);
+            }
+            texto.setVisible(false);
+            salir.setVisible(false);
+            puntuacion.setVisible(false);
+            play.setVisible(true);
+            principal.setVisible(true);
+            contador = 0;
         }
     }
 
 
     public void elementsRandom()
     {
+        puntuacion.setText(String.valueOf(contador));
         Random random = new Random();
         int[] a = new int[4];
         for (int x = 0;x<a.length;x++){
            a[x] = random.nextInt(117);
-           if (a[0]==a[1]||a[0]==a[2]||a[0]==a[3]||a[1]==a[2]||a[1]==a[3]||a[2]==a[3]);
+            if(a[x]==a[0]||a[x]==a[1]||a[x]==a[2]||a[x]==a[3])
             {
                 a[x] = random.nextInt(117);
             }
@@ -130,6 +218,7 @@ public class JuegoTabla extends JFrame implements ActionListener {
         {
             imageIcons[i] = new ImageIcon("src/Imagenes/Atos/"+(a[i]+1)+".png");
         }
+
         botones[0].setIcon(new ImageIcon(imageIcons[0].getImage().getScaledInstance(botones[0].getWidth(),botones[0].getHeight(), Image.SCALE_SMOOTH)));
         botones[1].setIcon(new ImageIcon(imageIcons[1].getImage().getScaledInstance(botones[1].getWidth(),botones[1].getHeight(), Image.SCALE_SMOOTH)));
         botones[2].setIcon(new ImageIcon(imageIcons[2].getImage().getScaledInstance(botones[2].getWidth(),botones[2].getHeight(), Image.SCALE_SMOOTH)));
@@ -160,10 +249,6 @@ public class JuegoTabla extends JFrame implements ActionListener {
     }
     ElementosDatos[] elementos = new ElementosDatos[118];
     public void elements() {
-
-
-
-
         elementos[0] = new ElementosDatos("H"  , "1"  , "HIDRÓGENO");
         elementos[1] = new ElementosDatos("He" , "2"  , "HELIO");
         elementos[2] = new ElementosDatos("Li" , "3"  , "LITIO");
@@ -179,7 +264,7 @@ public class JuegoTabla extends JFrame implements ActionListener {
         elementos[12] = new ElementosDatos("Al", "13" , "ALUMINIO");
         elementos[13] = new ElementosDatos("Si", "14" , "SILICIO");
         elementos[14] = new ElementosDatos("P" , "15" , "FÓSFORO");
-        elementos[15] = new ElementosDatos("S" , "16" , "AZUGRE");
+        elementos[15] = new ElementosDatos("S" , "16" , "AZUFRE");
         elementos[16] = new ElementosDatos("Cl", "17" , "CLORO");
         elementos[17] = new ElementosDatos("Ar", "18" , "ARGÓN");
         elementos[18] = new ElementosDatos("K" , "19" , "POTASIO");

@@ -1,7 +1,7 @@
-Número atómico:                 115
-Grupo:                      	15
+Número atómico:	                116
+Grupo:	                        16
 Periodo:	                    7
-Configuración electrónica:  	[Rn] 5f14 6d10 7s2 7p3
+Configuración electrónica:	    [Rn] 5f14 6d10 7s2 7p4
 Estados de oxidación:           	
 Electronegatividad:	            -
 Radio atómico / pm:         	-
